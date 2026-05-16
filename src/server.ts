@@ -8,7 +8,9 @@ app.get('/', (req :Request, res : Response) => {
   res.send('Hello World!')
 })
 
-
+app.post("/",async(req:Request, res:Response)=>{
+    console.log(req.body);
+})
 
 
 app.listen(port, () => {
