@@ -4,9 +4,6 @@ const port = 5000
 
 app.use(express.json())
 
-app.get('/', (req :Request, res : Response) => {
-  res.send('Hello World!')
-})
 
 app.post("/",async(req:Request, res:Response)=>{
     console.log(req.body);
